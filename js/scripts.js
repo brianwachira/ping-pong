@@ -1,6 +1,10 @@
 //business logic
 var pinPongize = function(pingPongInput){
-  return pingPongInput;
+var pingPongOutput = [];
+  for (var i = 1; i <= pingPongInput; i++) {
+     pingPongOutput.push(i);
+}
+return pingPongOutput.join();
 }
 //user interface logic
 $(document).ready(function(){
