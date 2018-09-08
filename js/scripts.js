@@ -4,8 +4,10 @@ var pingPongOutput = [];
   for (var i = 1; i <= pingPongInput; i++) {
     if (i%3 == 0) {
       pingPongOutput.push("ping");
+    }else if (i%5 == 0) {
+      pingPongOutput.push("pong");
     }else{
-      pingPongOutput.push(i);      
+      pingPongOutput.push(i);
     }
 }
 return pingPongOutput.join();
