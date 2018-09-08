@@ -2,7 +2,11 @@
 var pinPongize = function(pingPongInput){
 var pingPongOutput = [];
   for (var i = 1; i <= pingPongInput; i++) {
-     pingPongOutput.push(i);
+    if (i%3 == 0) {
+      pingPongOutput.push("ping");
+    }else{
+      pingPongOutput.push(i);      
+    }
 }
 return pingPongOutput.join();
 }
