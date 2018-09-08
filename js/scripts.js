@@ -1,3 +1,7 @@
+//business logic
+var pinPongize = function(pingPongInput){
+  return pingPongInput;
+}
 //user interface logic
 $(document).ready(function(){
   $("form#pingPong").submit(function(event){
