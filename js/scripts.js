@@ -2,10 +2,12 @@
 var pinPongize = function(pingPongInput){
 var pingPongOutput = [];
   for (var i = 1; i <= pingPongInput; i++) {
-    if (i%3 == 0) {
-      pingPongOutput.push("ping");
+    if (i%3 == 0 && i%5 == 0) {
+      pingPongOutput.push("pingpong!");
     }else if (i%5 == 0) {
-      pingPongOutput.push("pong");
+      pingPongOutput.push("pong!");
+    }else if (i%3 == 0) {
+      pingPongOutput.push("ping!");
     }else{
       pingPongOutput.push(i);
     }
@@ -18,6 +20,7 @@ $(document).ready(function(){
     event.preventDefault();
     var pingPongInput = parseInt($("input#number").val());
     var result = pinPongize(pingPongInput);
+    $(".result").prepend("<br/>");
     $(".result").text(result);
   });
 });
