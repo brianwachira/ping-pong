@@ -20,7 +20,6 @@ $(document).ready(function(){
     event.preventDefault();
     var pingPongInput = parseInt($("input#number").val());
     var result = pinPongize(pingPongInput);
-    $(".result").prepend("<br/>");
     $(".result").text(result);
   });
 });
