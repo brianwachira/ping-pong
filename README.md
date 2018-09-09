@@ -2,7 +2,8 @@
 #### 
 #### By **Brian Wachira**
 ## Description
-This is a ping pong web app. It is built based on <a href="https://en.wikipedia.org/wiki/Behavior-driven_development" target="_blank">BDD</a>
+This is a ping pong web app. It is built based on <a href="https://en.wikipedia.org/wiki/Behavior-driven_development" target="_blank">BDD</a><br/>
+
 | Behavior - Plain English | input(s) | Output(s) |
 |:-----------------------|:-----------|:--------|
 |Does nothing to number| 3 | 3 |
